@@ -1,0 +1,45 @@
+// In a .build file you specify directives for the DVT builder.
+// Any line preceded by '//', '#' or '--' is considered a comment.
+// 
+// examples/xbus_tb_top.sv      // top file, path relative to project root
+// examples/xbus_tb_top.e       // top file, path relative to project root
+// examples/xbus_tb_top.vhd     // top file, path relative to project root
+// ${UVM_HOME}/src/uvm_pkg.sv   // top file, absolute path with system variable
+// -f my_command_file.f         // include another command file
+// +incdir+${UVM_HOME}/src/     // indicate search directory (for `include)
+// -incdir ${UVM_HOME}/src/     // indicate search directory (for `include)
+// +define+INCA                 // define preprocessing symbol
+// +define+CHIP_LEVEL_ID=0x10   // define preprocessing symbol with value
+// -v src/source_library_file.v // specify Verilog source library file
+// -y src/lib                   // specify Verilog source library directory
+
+-uvm
+
++incdir+encoder_decoder/sv/endec_64b66b
++incdir+encoder_decoder/examples/endec_64b66b/tests
++incdir+encoder_decoder/examples/endec_64b66b/ve
+encoder_decoder/examples/endec_64b66b/ve/endec_64b66b_top.svh
+encoder_decoder/sv/endec_64b66b/endec_64b66b_pkg.sv
+encoder_decoder/examples/endec_64b66b/tests/endec_64b66b_tests_pkg.sv
+encoder_decoder/examples/endec_64b66b/ve/endec_64b66b_ve_pkg.sv
+
++incdir+encoder_decoder/sv/endec_8b10b
++incdir+encoder_decoder/examples/endec_8b10b/tests
++incdir+encoder_decoder/examples/endec_8b10b/ve
+encoder_decoder/examples/endec_8b10b/ve/endec_8b10b_top.svh
+encoder_decoder/sv/endec_8b10b/endec_8b10b_pkg.sv
+encoder_decoder/examples/endec_8b10b/tests/endec_8b10b_tests_pkg.sv
+encoder_decoder/examples/endec_8b10b/ve/endec_8b10b_ve_pkg.sv
+
++incdir+scrambler_descrambler/sv
++incdir+scrambler_descrambler/examples/additive/sv
++incdir+scrambler_descrambler/examples/additive/tests
++incdir+scrambler_descrambler/examples/multiplicative/sv
++incdir+scrambler_descrambler/examples/multiplicative/tests
+scrambler_descrambler/sv/scrambler_descrambler_pkg.sv
+scrambler_descrambler/examples/additive/sv/scrambler_descrambler_additive_top.sv
+scrambler_descrambler/examples/multiplicative/sv/scrambler_descrambler_multiplicative_top.sv
+
++incdir+examples/coding_and_scrambling/sv
++incdir+examples/coding_and_scrambling/tests
+examples/coding_and_scrambling/sv/coding_and_scrambling_top.sv

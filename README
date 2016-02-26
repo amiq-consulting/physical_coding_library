@@ -1,0 +1,34 @@
+==========================
+physical_coding_algorithms
+==========================
+
+Physical Coding Library
+
+It contains implementations for 8b10b, 64b66b encoding/decoding algorithms and an implementation for scrambling/descrambling.
+
+Folder description
+/encoder_decoder - source code for
+--/examples
+----/common                
+------/scripts             - scripts used to complie/run examples
+----/endec_64b66b          - usage examples of the 64b66b encoding/decoding implementation
+----/endec_8b10b           - usage examples of the 8b10b encoding/decoding implementation
+--/sv
+----/endec_64b66b          - source code of the 64b66b encoding/decoding implementation
+----/endec_8b10b           - source code of the 8b10b encoding/decoding implementation
+/examples
+--/coding_and_scrambling
+----/scripts
+----/sv
+----/tests
+/scrambler_descrambler     - source code for scrambler_descrambler packages
+--/examples                - usage examples of the scrambler/descrambler implementations 
+--/sv                      - source code of the implementation
+demo.sh                    - script for demonstrating an usage example of the library
+
+
+How to demo:
+./demo.sh
+
+For help, type:
+./demo.sh -help
