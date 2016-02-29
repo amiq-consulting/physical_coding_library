@@ -1,5 +1,5 @@
 ==========================
-physical_coding_algorithms
+physical_coding_library
 ==========================
 
 Physical Coding Library
@@ -7,19 +7,19 @@ Physical Coding Library
 It contains implementations for 8b10b, 64b66b encoding/decoding algorithms and an implementation for scrambling/descrambling.
 
 Folder description
-/encoder_decoder - source code for
---/docs/Physical_Coding_Library_UserGuide.docx - documentation on how to use this library
+/docs/Physical_Coding_Library_UserGuide.docx - documentation on how to use this library
+/encoder_decoder - source code for 8b10b and 64b66b encoding algorithms
 --/examples
 ----/common                
-------/scripts             - scripts used to complie/run examples
+------/scripts             - scripts used to compile/run examples
 ----/endec_64b66b          - usage examples of the 64b66b encoding/decoding implementation
 ----/endec_8b10b           - usage examples of the 8b10b encoding/decoding implementation
 --/sv
 ----/endec_64b66b          - source code of the 64b66b encoding/decoding implementation
 ----/endec_8b10b           - source code of the 8b10b encoding/decoding implementation
 /examples
---/coding_and_scrambling
-----/scripts
+--/coding_and_scrambling   - examples that combine coding algorithms with scrambling algorithm
+----/scripts               - scripts used to compile/run examples
 ----/sv
 ----/tests
 /scrambler_descrambler     - source code for scrambler_descrambler packages
