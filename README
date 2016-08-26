@@ -4,6 +4,8 @@ physical_coding_library
 
 Physical Coding Library
 
+AMIQ Blog related article: http://www.amiq.com/consulting/2016/02/25/physical-coding-library/
+
 It contains implementations for 8b10b, 64b66b encoding/decoding algorithms and an implementation for scrambling/descrambling.
 
 Folder description
